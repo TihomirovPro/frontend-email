@@ -1,0 +1,19 @@
+extends ../layout/page
+
+block content
+  +logo
+
+  +content
+    +hello("Sergey", "red-ru")
+
+    +row(style="font-size: 16px; color: #979797; line-height: 150%; padding: 0 32px 16px")
+      p(style="margin:0 0 16px") С твоей карты не удалось списать оплату за тариф Pro, поэтому мы вернули тебя на тариф Free. Мы скрыли с твоей публичной старицы блоки из тарифа Pro и дополнительные свайпы. Также мы прикрепили к письму примеры твоей страницы с действующим функционалом Pro и без него, чтобы было нагляднее.
+
+      p(style="margin:0 0 16px") Для возврата на тариф Pro необходимо либо пополнить счет и произвести оплату карты *8832, либо привязать новую карту.
+
+      p(style="margin:0 0 16px") Перейди в настройки для продолжения:
+
+    +row(style="text-align: center; padding: 0 0 16px")
+      +btn({ href: "https://tap.link/app", text: "Перейди в настройки" })
+
+  +footerNotUnsubscribe

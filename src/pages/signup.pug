@@ -1,0 +1,19 @@
+extends ../layout/page
+
+block content
+  +logo
+
+  +content
+    +hello("Sergey", "gray-ru")
+
+    +row(style="font-size: 16px; color: #979797; line-height: 150%; padding: 0 32px 16px")
+      p(style="margin:0") Поздравляем с регистрацией в Tap.link!
+        br
+        |Перейди по ссылке для подтверждения e-mail:
+
+    +row(style="text-align: center; padding: 0 0 16px")
+      +btn({ href: "https://tap.link/app", text: "Подтвердить e-mail" })
+
+    +content-footer("Если ты не регистрировался в Tap.link, просто игнорируй это сообщение.")
+
+  +footerNotUnsubscribe

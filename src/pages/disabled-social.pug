@@ -1,0 +1,18 @@
+extends ../layout/page
+
+block content
+  +logo
+
+  +content
+    +hello("Sergey", "red-ru")
+
+    +row(style="font-size: 16px; color: #979797; line-height: 150%; padding: 0 32px 16px")
+      p(style="margin:0 0 16px") Соц. сеть Facebook была отключена от твоего Tap.link, т.к. другой пользователь подтвердил права на аккаунт Sergey.
+
+      p(style="margin:0 0 16px") Если ты не согласен с этими действиями, то немедленно обратись в поддержку
+        +textLink({ href: "mailto:support@tap.link", text: "support@tap.link!" })
+
+    +row(style="text-align: center; padding: 0 0 16px")
+      +btn({ href: "mailto:support@tap.link", text: "Написать в поддержку" })
+
+  +footerNotUnsubscribe

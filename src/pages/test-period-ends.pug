@@ -1,0 +1,26 @@
+extends ../layout/page
+
+block content
+  +logo
+
+  +content
+    +head-image("test-period-ends")
+
+    +hello("Uliania", "green-ru")
+
+    +row(style="font-size: 16px; color: #979797; line-height: 150%; padding: 0 32px 32px")
+      p(style="margin: 0 0 16px") Ой-ой, завтра заканчивается тестовый период!
+        br
+        |Есть вопросы по тарифу или настройкам?
+        br
+        |Не стесняйся и спроси!
+        +textLink({ href: "mailto:support@tap.link", text: "Поддержка Tap.link" })
+
+      p(style="margin: 0 0 16px") Если нет, то желаем приятного использования!
+
+      p(style="margin: 0") Спасибо, что ты с нами!
+
+    +row(style="text-align: center; padding: 0 0 32px")
+      +btn({ href: "mailto:support@tap.link", text: "Поддержка Tap.link" })
+
+  +footer

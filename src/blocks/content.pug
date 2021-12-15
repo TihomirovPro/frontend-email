@@ -1,0 +1,20 @@
+mixin content()
+  +row
+    table(
+      align="center"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      style="border-radius: 20px; border: 1px solid #DFDFDF;"
+    )
+      block
+
+mixin content2()
+  table(
+    align="center"
+    border="0"
+    cellpadding="0"
+    cellspacing="0"
+  )&attributes(attributes)
+    block

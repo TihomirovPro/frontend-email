@@ -1,0 +1,21 @@
+extends ../layout/page
+
+block content
+  +logo
+
+  +content
+    +head-image("30-days")
+
+    +hello("Uliania", "green-ru")
+
+    +row(style="font-size: 16px; color: #979797; line-height: 150%; padding: 0 32px 32px")
+      p(style="margin: 0 0 16px") Расскажи нам, как прошли 30 дней использования сервиса. Отметь, что получается хорошо, а что показалось непонятным. Если у тебя уже появились замечания или предложения, то будем им рады!
+        +textLink({ href: "mailto:support@tap.link", text: "Нажми сюда для того, чтобы оставить отзыв." })
+      p(style="margin: 0") Твоё слово очень важно для нас!
+        br
+        |Каждый наш пользователь может повлиять на инструменты сервиса :)
+
+    +row(style="text-align: center; padding: 0 0 32px")
+      +btn({ href: "mailto:support@tap.link", text: "Оставь свой отзыв о нас!" })
+
+  +footer

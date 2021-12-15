@@ -1,0 +1,26 @@
+extends ../layout/page
+
+block content
+  +logo
+
+  +content
+    +head-image("test-period-ends")
+
+    +hello("Sergey", "green-ru")
+
+    +row(style="font-size: 16px; color: #979797; line-height: 150%; padding: 0 32px 16px")
+      p(style="margin:0 0 16px") Text ...
+
+    +row(style="text-align: center; padding: 0 0 16px")
+      +btn({ href: "https://tap.link/app", text: "Кнопка" })
+
+    +row(style="font-size: 16px; color: #979797; line-height: 150%; padding: 0 32px 16px")
+      p(style="margin:0 0 16px") Text ...
+
+    +row(style="text-align: center; padding: 0 0 16px")
+      +btn({ href: "https://tap.link/app", text: "Кнопка" })
+
+    +row(style="font-size: 16px; color: #979797; line-height: 150%; padding: 0 32px 16px")
+      p(style="margin:0 0 16px") Text ...
+
+  +footerNotUnsubscribe
